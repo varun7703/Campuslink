@@ -1,0 +1,31 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>chatroom</ion-title>
+    <button ion-button menuToggle>
+    <ion-icon name="menu"></ion-icon>
+  </button>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content class="con" padding>
+<ion-card *ngIf="show" class="cd">
+  <p>display name</p><p class="in">
+  {{input}}</p>
+</ion-card>
+  
+
+</ion-content>
+
+<ion-footer >
+  <div id="footer">
+    <div class="elem">
+        <ion-input type="text" placeholder="Add a comment..." [(ngModel)]="input" text-wrap></ion-input>
+    </div>
+    <div class="elem">
+        <button ion-button icon-only (click)="show=!show"><ion-icon name="ios-send"></ion-icon></button>
+    </div>
+</div>
+<br>
+</ion-footer>

@@ -1,0 +1,44 @@
+page-chatroom {
+    ion-input {
+        height: 45px;
+        width: 300px;
+        margin-top: 1px;
+        margin-bottom: 1px;
+        margin-left: 5px;
+        border-radius: 50px;
+        border: 2px solid grey;
+        padding-left: 12px;
+        padding-right: 12px;
+        background-color: white;
+    }
+    div#footer div.elem:first-child {
+        flex-grow: 1;
+    }
+    ion-input.break {
+        word-wrap: break-word;
+        word-break: break-all;
+        height: 80px;
+    }
+    div#footer {
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+    }
+    .elem button {
+        border-radius: 100%;
+        margin-top: 7px;
+        overflow: hidden;
+        color: white;
+        background-color: grey;
+        margin-right: 7px;
+    }
+    .con{
+        background-color: rgb(227, 248, 244);
+      }
+      .cd{
+          margin-left: 30%;
+      }
+      .in{
+          font-size: 20px;
+      }
+}

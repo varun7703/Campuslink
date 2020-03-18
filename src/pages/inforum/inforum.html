@@ -1,0 +1,70 @@
+<ion-header no-border>
+    <ion-navbar transparent>
+        <ion-title>Forum</ion-title>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+          </button>
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content>
+  
+    <ion-card (click)="inForum()">
+        <ion-list>
+  
+            <ion-item-sliding>
+                <ion-item>
+                    <ion-avatar class="avat">
+                        <img src="../assets/imgs/camera.jpg">
+                    </ion-avatar>
+                    <h2 class="wrap">Display Name
+                        <ion-chip class="right" class="icon2">
+                         {{tap}}
+                            <button ion-button clear small class="right">
+  <ion-icon ios="ios-eye" md="md-eye"></ion-icon>
+  </button>
+                        </ion-chip>
+                        <ion-chip class="right" class="icon2">
+                            &emsp;10
+                            <button ion-button clear small class="right">
+  <ion-icon ios="ios-create" md="md-create"></ion-icon>
+  </button>
+                        </ion-chip>
+                    </h2>
+                    <ion-note> Feb 25,2018,5:15:14 PM</ion-note>
+  
+                    <ion-item text-wrap class="bg">
+                        <h2 class="left">Movies</h2>
+                        <hr>
+                        <h2 class="left">Q:What is Baaghi 2?</h2>
+                        <div class="ellepsis">Baaghi 2 is the world worst movie you can ever watch in your life.</div>
+                    </ion-item>
+                </ion-item>
+  
+                <ion-item-options icon-start>
+                    <button ion-button (click)="facebook(item)" class="b">
+  <ion-icon icon only name="logo-facebook"></ion-icon>
+  </button>
+  
+                    <button ion-button color="primary" (click)="whatsapp(item)" class="b">
+  <ion-icon ios="logo-whatsapp" md="logo-whatsapp"></ion-icon>
+  </button>
+  
+                    <button ion-button (click)="twiter(item)" class="b">
+  <ion-icon ios="logo-twitter" md="logo-twitter"></ion-icon>
+  </button>
+                </ion-item-options>
+  
+            </ion-item-sliding>
+  
+  
+        </ion-list>
+    </ion-card>
+  
+  
+  
+  
+  </ion-content>
+  <ion-footer >
+      <button ion-button full color="light" (click)="askqusetion()" >Ask Question</button>
+      </ion-footer>

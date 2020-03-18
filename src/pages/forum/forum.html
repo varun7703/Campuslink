@@ -1,0 +1,94 @@
+<!--
+Generated template for the AnswerPage page.
+
+See http://ionicframework.com/docs/components/#navigation for more info on
+Ionic pages and navigation.
+-->
+<ion-header no-border>
+    <ion-navbar transparent>
+        <ion-item class="bg">
+            <ion-avatar class="avat" item-start>
+                <img src="assets/imgs/logo.png">
+            </ion-avatar>
+            <h2 class="wp">Anonymous</h2>
+            <ion-note class="nt">Feb 23,2018,1:02:14 AM</ion-note>
+        </ion-item>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+          </button>
+        <!-- <ion-buttons end>
+            <button ion-button class="navbtn"><ion-icon name="ios-arrow-round-back"></ion-icon></button>
+        </ion-buttons> -->
+    </ion-navbar>
+  </ion-header>
+  <ion-content class="content" padding>
+    <ion-card class="crd1">
+        <div class="up">
+            &emsp;
+            <ion-note>3</ion-note><br>
+            <button ion-button icon-left clear small class="btn">
+  <ion-icon name="ios-arrow-dropup"></ion-icon></button><br>
+            <button ion-button icon-left clear small class="btn">
+  <ion-icon name="ios-arrow-dropdown"></ion-icon></button><br> &emsp;
+            <ion-note>3</ion-note>
+        </div>
+        <div class="dv">
+            <p class="ellepsis1">
+                Hello how does this app work ??
+            </p>
+            <p class="ellepsis">
+                Really wanna know so that we can also make our own app !!
+            </p>
+        </div>
+        <br><br>
+    </ion-card>
+    <div align="center">
+        <button ion-button outline (click)="show=!show" class="ans">Answer</button>
+    </div>
+    <ion-card class="crd2" *ngIf="!show">
+        <ion-item class="bg">
+            <ion-avatar class="avat" item-start>
+                <img src="assets/imgs/logo.png">
+            </ion-avatar>
+            <h2 class="wp">Developer</h2>
+            <ion-note class="nt">Feb 23,2018,1:02:14 AM</ion-note>
+        </ion-item><br>
+        <div class="div1">
+            <h2 class="item-text-wrap">
+                {{input}}
+            </h2>
+        </div>
+        <ion-item class="it">
+            <ion-row>
+                <ion-col>
+                    <button ion-button icon-left clear small class="icn">
+  <ion-icon name="md-arrow-dropup"></ion-icon>
+  <div>10</div>
+  </button>
+                </ion-col>
+                <ion-col>
+                    <button ion-button icon-left clear small class="icn">
+  <ion-icon name="md-arrow-dropdown"></ion-icon>
+  <div>1</div>
+  </button>
+                </ion-col>
+                <ion-col center text-center>
+                    <ion-note>03/04/18</ion-note>
+                </ion-col>
+            </ion-row>
+        </ion-item>
+    </ion-card>
+  
+  </ion-content>
+  <ion-footer *ngIf="show">
+    <div id="footer">
+        <div class="elem">
+            <ion-input type="text" placeholder="Add a comment..." [(ngModel)]="input" text-wrap></ion-input>
+        </div>
+        <div class="elem">
+            <button ion-button icon-only (click)="show=!show"><ion-icon name="ios-send"></ion-icon></button>
+        </div>
+    </div>
+    <br>
+  </ion-footer>
+  

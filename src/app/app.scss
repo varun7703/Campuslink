@@ -14,3 +14,15 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+  .h1{
+    background: linear-gradient(to bottom right, rgb(0, 70, 128), rgb(0, 204, 255));
+    text-align: center;
+    padding: 10px;
+  }
+  .bg1{
+    background: transparent;
+  }
+  .wp{
+      font-size: 80px;
+      font-weight: bolder;
+  }

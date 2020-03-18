@@ -22,7 +22,11 @@ $app-direction: ltr;
 // To view all the possible Ionic variables, see:
 // http://ionicframework.com/docs/theming/overriding-ionic-variables/
 
-
+$tabs-ios-tab-color-active:black;
+$tabs-md-tab-color-active:black;
+$tabs-md-tab-font-weight: bold;
+$fab-size: 70px;
+$fab-mini-size:50px;
 
 
 // Named Color Variables

@@ -1,0 +1,46 @@
+<!-- -->
+<ion-content padding class="co" >
+    <div class="login-content">
+  
+      <div class="tt">
+        <p>CAMPUS LINK </p>
+      </div>
+  
+      <!-- Login form -->
+      <form class="list-form">
+        <ion-item class="io" >
+            <ion-icon name="mail" item-start class="text-primary"></ion-icon>
+          <ion-input placeholder="Email ID" type="email"></ion-input>
+        </ion-item>
+        <ion-item class="io">
+            <ion-icon name="md-key" item-start class="text-primary"></ion-icon>
+            <ion-input placeholder="Reg No." type="email"></ion-input>
+          </ion-item>
+    
+        <ion-item class="io">
+            <ion-icon name="lock" item-start class="text-primary"></ion-icon>
+          <ion-input placeholder="Password" type="password"></ion-input>
+        </ion-item>
+      </form>
+  
+      <p text-right ion-text color="secondary" tappable (click)="forgotPass()"><strong>Forgot Password?</strong></p>
+  
+      <div>
+        <button ion-button icon-start block color="dark" tappable (click)="login()">
+          <ion-icon name="log-in"></ion-icon>
+          SIGN IN
+        </button>
+<p style="  margin-left: 160px;">OR</p>  
+        <button ion-button block > <ion-icon style="  margin-right: 16px;" ios="logo-facebook" md="logo-facebook"></ion-icon>Log in </button>
+  
+      </div>
+  
+  
+      <!-- Other links -->
+      <div text-center margin-top>
+        <span ion-text color="secondary" tappable (click)="register()">New here? <strong>Sign up</strong></span>
+      </div>
+  
+    </div>
+  </ion-content>
+  
